@@ -1,1 +1,1 @@
-web: gunicorn mysite.asgi:application -k uvicorn.workers.UvicornWorker
+web: gunicorn smartgear_api.asgi:application -k uvicorn.workers.UvicornWorker
