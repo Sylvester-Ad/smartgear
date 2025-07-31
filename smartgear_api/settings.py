@@ -163,4 +163,4 @@ SWAGGER_SETTINGS = {
         }
     }
 }
-
+ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="*").split(",")
