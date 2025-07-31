@@ -13,6 +13,7 @@ idna==3.10
 inflection==0.5.1
 Markdown==3.8.2
 packaging==25.0
+psycopg2-binary==2.9.10
 PyJWT==2.10.1
 python-decouple==3.8
 pytz==2025.2
