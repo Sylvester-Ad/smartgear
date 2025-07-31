@@ -40,7 +40,8 @@ class RegisterView(generics.CreateAPIView):
 class ProductViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    permission_classes = [IsAuthenticated]  # Only authenticated users can view products
+    # permission_classes = [IsAuthenticated] 
+    # Only authenticated users can view products
 
 
 # ------------------------
