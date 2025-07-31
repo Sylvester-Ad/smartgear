@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: smartgear-backend
+    runtime: python
+    buildCommand: ""
+    startCommand: gunicorn smartgear_api.wsgi
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        sync: false
+      - key: DEBUG
+        value: false
+      - key: DATABASE_URL
+        sync: false
+      - key: PAYSTACK_SECRET_KEY
+        sync: false
+    plan: free
+    region: oregon  # or frankfurt, singapore etc.
+    buildFilter:
+      paths:
+        - ./**

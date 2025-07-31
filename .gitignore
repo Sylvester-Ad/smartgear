@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+.env/
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Django migrations
+**/migrations/
+!**/migrations/__init__.py
+
+# Secret files
+.env
+*.sqlite3
+
+# Django static & media files
+/static/
+media/
+staticfiles/
+
+# Logs
+*.log
+
+# Compiled files
+*.so
+
+# Pip dependency files
+pip-log.txt
+
+# Gunicorn logs
+gunicorn-error.log
+
+# Local testing
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# Documentation builds
+docs/_build/

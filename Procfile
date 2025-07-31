@@ -1,0 +1,1 @@
+web: gunicorn smartgear_api.wsgi
