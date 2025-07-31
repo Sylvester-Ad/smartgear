@@ -1,1 +1,1 @@
-web: gunicorn smartgear_api.wsgi
+web: gunicorn mysite.asgi:application -k uvicorn.workers.UvicornWorker

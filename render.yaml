@@ -2,8 +2,8 @@ services:
   - type: web
     name: smartgear-backend
     runtime: python
-    buildCommand: ""
-    startCommand: gunicorn smartgear_api.wsgi
+    buildCommand: "./build.sh"
+    startCommand: 'python -m gunicorn mysite.asgi:application -k uvicorn.workers.UvicornWorker'
     envVars:
       - key: DJANGO_SECRET_KEY
         sync: false
