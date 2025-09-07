@@ -1,6 +1,6 @@
 # SmartGear Checkout Backend API
 
-A Django REST Framework backend for the SmartPay Checkout system — designed for a 3-day hackathon project. This API handles user authentication, product listing, cart management, Paystack payment integration, and webhook handling.
+A Django REST Framework backend for a SmartPay Checkout system. This API handles user authentication, product listing, cart management, Paystack payment integration, and webhook handling.
 
 ---
 
